@@ -2,6 +2,7 @@
 
 html {
     color: #222;
+    font-family: 'proxima_novaregular';
     font-size: 1em;
     line-height: 1.4;
 }
@@ -53,6 +54,15 @@ textarea {
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+section {
+  margin-bottom: 50px;
+}
+
+.benefit-heading {
+  font-family: 'proxima_novabold';
+  font-size: 40px;
+}
+
 .carousel-caption {
   font-size: 40px;
   color: #1f6ba3;
@@ -61,5 +71,6 @@ textarea {
   right: 5%; }
 
 .carousel-caption > .slogan-text {
-  color: white; }
+  color: white; 
+}
 

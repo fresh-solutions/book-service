@@ -58,12 +58,9 @@ gulp.task("images", function () {
 
 // Move fonts
 gulp.task('fonts', function() {
-	gulp.src('app/fonts/fonts.css')
-	.pipe(sourcemaps.init())
-	.pipe(plumber())
-	.pipe(minifyCss())
-	.pipe(sourcemaps.write())
-	.pipe(gulp.dest('prod/css/'))
+	gulp.src("app/fonts/**/*")
+		//.pipe(filter(["*.eot","*.svg","*.ttf","*.woff","*.woff2"]))
+		.pipe(gulp.dest("prod/fonts/"));
 });
 
 //
