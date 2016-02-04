@@ -1,0 +1,16 @@
+extend ../main
+
+block content
+	header.header
+		include ../navbar/navbar.jade
+	h1
+		section#slogan.slogan
+			.container
+				.carousel.slide#mycarousel(data-ride="carousel")
+					.carousel-inner
+						.item.active
+							img.img-responsive(src="img/header_back.jpg")
+							.carousel-caption
+								p A place where fantasy & Real world meets...
+								p.slogan-text The only place for cummunication between Newbee, Professional writers & Publisher
+								button.btn.btn-primary LEARN MORE
