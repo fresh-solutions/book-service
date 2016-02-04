@@ -103,6 +103,7 @@ gulp.task('watch', function(){
 	gulp.watch('app/**/*.jade', ['jade']);	
 	gulp.watch('app/**/*.scss', ['sass']);
 	gulp.watch('app/fonts/fonts.css', ['fonts']);
+	gulp.watch('app/img/**/*', ['images']);
 	gulp.watch('app/**/*.js', ['scripts']);
 	gulp.watch('app/**/*').on('change', browserSync.reload);
 });
